@@ -1,0 +1,56 @@
+
+[
+  {
+    "factoryId" : 1,
+    "data" :
+    [
+      {
+        "Jan": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "Feb": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "Mar": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "April": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      }
+    ]
+  },
+
+  {
+    "factoryId" : 2,
+    "data" :
+    [
+      {
+        "Jan": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "Feb": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "Mar": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      },
+      {
+        "April": 878 ,
+        "NoOfApp" : 45,
+        "AvgLifetime" :243
+      }
+    ]
+  }
+]

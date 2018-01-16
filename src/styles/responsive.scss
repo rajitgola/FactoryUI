@@ -1,0 +1,376 @@
+// //Tablet Screen
+// @media only screen and (min-width: 768px) and (max-width: 1366px ){
+
+// 	 body{
+// 	 	    min-width: auto;
+// 	    width: 100% !important;
+// 	 }
+
+// 	 app-page-header{
+// 	 	min-width: auto !important;
+// 	 }
+
+// 	 div.welcome{
+// 		 display: none;
+// 	 }
+
+// 	 nav.navbar.navbar-light.justify-content-between{
+// 	 	    padding-left: 20px;
+// 	    flex-direction: row;
+// 	    flex-wrap: nowrap;
+// 	 }
+
+// 	 app-page-header app-quick-search-input .form-control{
+// 	 	width: 320px !important;
+// 	 }
+
+// 	 .navbar  .nav   a{
+// 	 	margin-right: 1.1em !important;
+// 	 	&:nth-child(1){
+// 	 		display: none !important;
+// 	 	}
+// 	 }
+
+// 	 .navbar  .nav{
+// 	 	    flex-wrap: nowrap !important;
+// 	 }
+
+// 	 div#dashboard-content-inner div.row.sortable-row:nth-child(1) .col-4 + .col-6{
+// 	 	margin-top: 20px;
+// 	 }
+
+// 	div.row.sortable-row:nth-child(1){
+// 	flex-direction: column;
+// 	div.col-4 , div.col-6{
+// 		    flex: 0 0 100%;
+// 		    max-width: 100%;
+// 		}
+
+// 	div.col-4{
+// 			 col-5{
+// 			    flex: 0 0 50%;
+// 			     max-width: 50%;
+// 			}
+
+// 			.org-list[_ngcontent-c1]{
+// 			        display: flex;
+// 			    flex-direction: row;
+// 			    flex-wrap: wrap;
+// 			    li{
+// 			        flex: 0 0 50%;
+// 			    }
+// 			}
+// 		}
+// 	}
+
+// 	div.row.sortable-row:nth-child(2){
+// 	flex-direction: row;
+// 	div.col-4 , div.col-6{
+// 		    flex: 0 0 50%;
+// 		    max-width: 50%;
+// 		}
+// 	}
+
+// 	// Dashboard starts
+// 	app-page-layout[pagetitle="Dashboard"] .content-wrapper{
+// 		    flex-direction: column;
+// 		    app-sidepanel{
+// 		    	div.side-panel{
+// 		    		width: 100% !important;
+// 		    		div.user-wrap{
+// 		    			flex-direction : row;
+//     					justify-content: space-evenly;
+//     					flex-wrap : wrap;
+//     					div.btns-wrap{
+//     						    margin-top: 0px;
+//     						flex-direction : row;
+//     						    flex: 3 1 auto;
+//     						justify-content: flex-end;
+//     						 .btn   + .btn{
+//     							margin-top: 0px !important;
+//     							margin-left: 1em;
+//     						}
+//     					}
+
+//     					div.user-info{
+//     						flex: 2 1 auto;
+//     						justify-content: flex-end;
+//     						margin-left: 2em;
+//     					}
+
+//     					div.avatar{
+//     						    flex: 0 1 auto;
+//     						justify-content: flex-start;
+//     					}
+// 		    		}
+// 		    	}
+// 		    }
+// 	}
+
+
+// 		app-page-layout[pagetitle="Profile"] .content-wrapper{
+// 		    flex-direction: column;
+// 		    app-sidepanel{
+// 		    	div.side-panel{
+// 		    		width: 100% !important;
+// 		    		div.user-wrap{
+// 		    			flex-direction : row;
+//     					justify-content: space-evenly;
+//     					flex-wrap : wrap;
+//     					div.btns-wrap{
+//     						    margin-top: 0px;
+//     						flex-direction : row;
+//     						    flex: 3 1 auto;
+//     						justify-content: flex-end;
+//     						 .btn   + .btn{
+//     							margin-top: 0px !important;
+//     							margin-left: 1em;
+//     						}
+//     					}
+
+//     					div.user-info{
+//     						flex: 2 1 auto;
+//     						justify-content: flex-end;
+//     						margin-left: 2em;
+//     					}
+
+//     					div.avatar{
+//     						    flex: 0 1 auto;
+//     						justify-content: flex-start;
+//     					}
+// 		    		}
+// 		    	}
+// 		    }
+// 	}
+
+// 	//Search Starts
+// 	app-page-layout[pagetitle="Search"] .content-wrapper{
+// 		div.tab-content app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+
+// 		div.search-results app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+
+// 	}
+
+// 	//Regulators Start
+//     app-page-layout[pagetitle="Regulators"] .content-wrapper{
+//     	div.tab-content app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 				}
+
+// 				.nav-tabs .nav-item{
+// 					margin-right: 1.5em;
+// 				}
+//     }
+
+//     //Notifications starts
+//     app-page-layout[pagetitle="Notifications"] .content-wrapper{
+//     	.content{
+//     		margin: 2em;
+//     	}
+
+//     	li.notification-wrap sub.date{
+//     		    align-self: flex-end;
+//     	}
+//     }
+
+//     //Regulations Starts
+//     app-page-layout[pagetitle="Regulations"] .content-wrapper{
+//     	div.tab-content app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+// 		app-tabs div.d-flex.justify-content-between.align-items-center{
+// 			    flex-direction: row;
+//     			flex-wrap: wrap;
+//     			>div{
+//     				    flex: 0 0 auto;
+//     					align-self: flex-end;
+//     			}
+// 		}
+//     }
+// }
+
+
+// //Mobile Screen
+// @media only screen and (min-width: 320px ) and (max-width: 768px ){
+
+// 	 body{
+// 	 	    min-width: auto;
+// 	    width: 100% !important;
+// 	 }
+
+// 	 div.main{
+// 		 margin-left: 0px !important;
+// 	 }
+
+// 	 a.navbar-brand{
+// 		 margin-left: 2.2em;
+// 	 }
+
+// 	 app-page-layout .content-wrapper{
+// 		 margin-left: 3em;
+// 	 }
+
+// 	 app-page-header{
+// 	 	min-width: auto !important;
+// 		width: 100% !important;
+// 	 }
+
+// 	 nav.navbar.navbar-light.justify-content-between{
+// 	 	    padding-left: 20px;
+// 	    flex-direction: row;
+// 	    flex-wrap: nowrap;
+// 	 }
+
+// 	 app-page-header app-quick-search-input .form-control{
+// 	 	width: auto !important;
+// 	 }
+
+// 	 .navbar  .nav   a{
+// 	 	margin-right: 1.1em !important;
+// 	 	&:nth-child(1){
+// 	 		display: none !important;
+// 	 	}
+// 	 }
+
+// 	 .navbar  .nav{
+// 	 	    flex-wrap: nowrap !important;
+// 	 }
+
+// 	 div#dashboard-content-inner div.row.sortable-row:nth-child(1) .col-4 + .col-6{
+// 	 	margin-top: 20px;
+// 	 }
+
+// 	div.row.sortable-row{
+// 		flex-direction: column;
+// 		div.col-4 , div.col-6{
+// 			    flex: 0 0 100%;
+// 			    max-width: 100%;
+// 			}
+
+// 		div.col-4{
+// 				 col-5{
+// 				    flex: 0 0 50%;
+// 				     max-width: 50%;
+// 				}
+
+// 				.org-list{
+// 				        display: flex;
+// 				    flex-direction: row;
+// 				    flex-wrap: wrap;
+// 				    li{
+// 				        flex: 0 0 50%;
+// 				    }
+// 				}
+// 			}
+// 	}
+
+// 	footer.wrapper{
+// 		flex-direction: column;
+// 		ul.link-list.social-links{
+// 			margin-top: 4em;
+// 			margin-bottom: 2em;
+// 		}
+// 	}
+
+// 	app-page-layout[pagetitle="Profile"] .content-wrapper{
+//    flex-direction: column;
+// 		 div.user-wrap{
+// 			 flex-direction: row;
+// 			 flex-wrap: wrap;
+// 			 div.btns-wrap{
+// 				 flex-direction: row;
+// 			 }
+// 		 	}
+// 		}
+
+// 	app-page-layout[pagetitle="Regulations"] .content-wrapper{
+//     	div.tab-content app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+// 		app-tabs div.d-flex.justify-content-between.align-items-center{
+// 			    flex-direction: row;
+//     			flex-wrap: wrap;
+//     			>div{
+//     				    flex: 0 0 auto;
+//     					align-self: flex-end;
+//     			}
+// 				}
+//     }
+
+// 		app-page-layout[pagetitle="Search"].collapsed-layout .search-results{
+// 			padding: 2em !important;
+// 		}
+
+//     nav.navbar.navbar-light.justify-content-between{
+//     	align-items : flex-start;
+// 			flex-direction: row;
+// 			flex-wrap: nowrap;
+// 			padding: 20px;
+//      .form-inline{
+// 				margin-right: 0px;
+// 				.form-control{
+// 					padding-right: 0px !important;
+// 					width: 100% !important;
+// 				}
+// 			}
+//     }
+
+//     div.d-flex.align-items-center{ //header
+//     flex-direction : column-reverse;
+//     }
+
+//     .navbar  .nav   a{
+// 	 	margin-right: 1.1em !important;
+// 	 	&:nth-child(1){
+// 	 		display: none !important;
+// 	 	}
+// 	 }
+
+// 	 div.welcome{
+// 	 	display: none !important;
+// 	 }
+
+// 	 div.user-wrap.d-flex.align-items-center{
+// 	 	align-items : flex-start;
+// 	 }
+
+// 	 	//Search Starts
+// 	app-page-layout[pagetitle="Search"] .content-wrapper , app-page-layout[pagetitle="Regulators"] .content-wrapper{
+// 		div.tab-content app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+
+// 		div.search-results app-cards-grid div.row.cards-row div.col-5.item{
+// 			    flex: 0 0 100%;
+//     			max-width: 100%;
+// 		}
+
+// 	}
+
+// 	app-page-layout[pagetitle="Notifications"] .content-wrapper{
+// 		div.content{
+// 			margin: 2em;
+// 			li.notification-wrap{
+// 				flex-direction: row;
+// 				.date{
+// 					align-self: auto;
+// 					min-width: auto;
+// 					 margin-left: 0px;
+// 					text-align: right;
+// 				}
+// 			}
+// 		}
+// 	}
+
+
+// }

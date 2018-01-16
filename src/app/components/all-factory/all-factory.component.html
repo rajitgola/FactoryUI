@@ -1,0 +1,13 @@
+<section style="margin-top: 5em;">
+    <h1>all-factory works!</h1>
+</section>
+
+<section>
+  <ul>
+    <li *ngFor='let factory of allFactories'>
+      <!-- {{factory | json}} -->
+      <!-- <a routerLink="/dummy/{{a?.slug}}">{{factory?.name}}</a> -->
+      <a routerLink="/factoryLanding/{{factory?.factoryId}}">{{factory?.name}}</a>
+    </li>
+  </ul>
+</section>

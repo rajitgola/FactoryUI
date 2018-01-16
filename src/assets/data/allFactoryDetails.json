@@ -1,0 +1,40 @@
+[
+	{
+    "factoryId" : 1 ,
+		"name" : "Name1" ,
+		"imgLogo" : "" ,
+		"noOfProjects" : 20,
+		"noOfEmployees" : 20,
+		"cost" : 20,
+		"migratedApplication" : 20,
+    "productivity" : {
+      "acme_index" :32
+    },
+    "projects" : [
+      {
+        "projectId" :12 ,
+        "name" : "er",
+        "status" : 2,
+        "completedd" : 2
+      },
+      {
+        "projectId" :12 ,
+        "name" : "er",
+        "status" : 2,
+        "completedd" : 2
+      },
+      {
+        "projectId" :12 ,
+        "name" : "er",
+        "status" : 2,
+        "completedd" : 2
+      }
+    ],
+    "capacity"  : [
+
+    ],
+    "plannedVsActual" :[
+      
+    ]
+	}
+]

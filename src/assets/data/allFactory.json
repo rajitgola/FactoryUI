@@ -1,0 +1,38 @@
+[
+	{
+    "factoryId" : 1 ,
+		"name" : "Name1" ,
+		"imgLogo" : "" ,
+		"noOfProjects" : 20,
+		"noOfEmployees" : 20,
+		"cost" : 20,
+		"migratedApplication" : 20
+	},
+  {
+    "factoryId" : 2,
+		"name" : "Name2" ,
+		"imgLogo" : "" ,
+		"noOfProjects" : 10,
+		"noOfEmployees" : 20,
+		"cost" : 20,
+		"migratedApplication" : 20
+	},
+  {
+    "factoryId" : 3 ,
+		"name" : "Name3" ,
+		"imgLogo" : "" ,
+		"noOfProjects" : 120,
+		"noOfEmployees" : 20,
+		"cost" : 20,
+		"migratedApplication" : 20
+	},
+  {
+    "factoryId" : 4 ,
+		"name" : "Name4" ,
+		"imgLogo" : "" ,
+		"noOfProjects" : 21,
+		"noOfEmployees" : 20,
+		"cost" : 20,
+		"migratedApplication" : 20
+	}
+]

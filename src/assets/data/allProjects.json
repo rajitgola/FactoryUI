@@ -1,0 +1,28 @@
+
+[
+    {
+      "factoryId" : 1,
+      "projects" :
+      [
+          {
+            "projectId": 878 ,
+            "name" : 45,
+            "description" :243,
+            "statusText" :243,
+            "location" :243,
+            "timeline" :243,
+            "manager" :243,
+            "stakeholder" :243,
+            "resources" :[{
+              "resource1" :12,
+              "resource2" :12,
+              "resource3" :12,
+              "resource4" :12,
+              }],
+            "progress" : 45,
+            "appTransformed" : 90,
+            "graphData" : ""
+          }
+      ]
+    }
+]
