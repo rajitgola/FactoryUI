@@ -5,22 +5,24 @@ import { FactoryLandingComponent } from './components/factory-landing/factory-la
 import { ProjectSummaryComponent } from './components/project-summary/project-summary.component';
 import { FactoryThroughputComponent } from './components/factory-throughput/factory-throughput.component';
 
+import { AuthGuard } from './guards/auth.guard';
+
 const routes: Routes = [
   {
     path: 'allFactory',
-    component: AllFactoryComponent
+    component: AllFactoryComponent ,  canActivate : [AuthGuard]
   },
   {
     path: 'factoryLanding/:id',
-    component: FactoryLandingComponent
+    component: FactoryLandingComponent , canActivate : [AuthGuard]
   },
   {
     path: 'projectSummary',
-    component: ProjectSummaryComponent
+    component: ProjectSummaryComponent , canActivate : [AuthGuard]
   },
   {
     path: 'factoryThroughput/:id',
-    component: FactoryThroughputComponent
+    component: FactoryThroughputComponent , canActivate : [AuthGuard]
   }
 ];
 

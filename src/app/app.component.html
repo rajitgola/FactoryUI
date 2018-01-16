@@ -1,47 +1,49 @@
 
-<section id="loginSection">
-  <section>
-    <div class="container">
-      <div class="row">
-        <section>
-          <div class="imgContainer text-center">
-            <img src="../assets/images/login.png" alt="">
-          </div>
-          <div class="loginForm">
-            <h2 class="text-center"><strong>Please Login to Continue</strong></h2>
-            <div class="container" id="lgBox">
-              <form class="form-group" #lgForm="ngForm" (ngSubmit)="loginSubmit(lgForm.value)">
-                <div class="form-group">
-                  <div class="loginRow"><input type="text" #username name="username" ngModel class="form-control" placeholder="Username" required /></div>
-                </div>
 
-                <div class="form-group">
-                  <div class="loginRow"><input type="password" #password name="password" ngModel class="form-control" placeholder="Password" required  /></div>
-                </div>
 
-                <div class="checkbox pull-left">
-                  <label>
-                    <input type="checkbox">Remember Me
-                  </label>
-                </div>
+<router-outlet>
+  <section id="loginSection" *ngIf='!isLoggedIn'>
+    <section>
+      <div class="container">
+        <div class="row">
+          <section>
+            <div class="imgContainer text-center">
+              <img src="../assets/images/login.png" alt="">
+            </div>
+            <div class="loginForm">
+              <h2 class="text-center"><strong>Please Login to Continue</strong></h2>
+              <div class="container" id="lgBox">
+                <form class="form-group" #lgForm="ngForm" (ngSubmit)="loginSubmit(lgForm.value)">
+                  <div class="form-group">
+                    <div class="loginRow"><input type="text" #username name="username" ngModel class="form-control" placeholder="Username" required /></div>
+                  </div>
 
-                <div class="form-group pull-right">
-                  <a href=""><img src="../assets/images/link.png" alt=""> Forgot Password?</a>
-                </div>
+                  <div class="form-group">
+                    <div class="loginRow"><input type="password" #password name="password" ngModel class="form-control" placeholder="Password" required  /></div>
+                  </div>
 
-                <div style="clear:both;"></div>
+                  <div class="checkbox pull-left">
+                    <label>
+                      <input type="checkbox">Remember Me
+                    </label>
+                  </div>
 
-                <div class="form-group">
-                  <div class="loginRow"><button class="btn btn-primary btn-block/">Login</button></div>
-                </div>
+                  <div class="form-group pull-right">
+                    <a href=""><img src="../assets/images/link.png" alt=""> Forgot Password?</a>
+                  </div>
 
-              </form>
-            </div><!--lg box-->
-          </div><!--loginForm-->
-        </section>
+                  <div style="clear:both;"></div>
+
+                  <div class="form-group">
+                    <div class="loginRow"><button class="btn btn-primary btn-block/">Login</button></div>
+                  </div>
+
+                </form>
+              </div><!--lg box-->
+            </div><!--loginForm-->
+          </section>
+        </div>
       </div>
-    </div>
+    </section>
   </section>
-</section>
-
-<router-outlet></router-outlet>
+</router-outlet>

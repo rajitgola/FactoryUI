@@ -4,6 +4,7 @@ import { HttpModule } from '@angular/http';
 import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { CookieModule } from 'ngx-cookie';
 import { AppComponent } from './app.component';
 
 import { LoginService } from './services/login.service';
@@ -15,6 +16,8 @@ import { AllFactoryComponent } from './components/all-factory/all-factory.compon
 import { FactoryLandingComponent } from './components/factory-landing/factory-landing.component';
 import { ProjectSummaryComponent } from './components/project-summary/project-summary.component';
 import { FactoryThroughputComponent } from './components/factory-throughput/factory-throughput.component';
+
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -29,9 +32,10 @@ import { FactoryThroughputComponent } from './components/factory-throughput/fact
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    CookieModule.forRoot()
   ],
-  providers: [LoginService , AllFactoryService , AllThroughputService],
+  providers: [LoginService , AllFactoryService , AllThroughputService , AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
