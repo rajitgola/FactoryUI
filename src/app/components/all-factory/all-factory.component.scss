@@ -1,0 +1,35 @@
+.navbar{
+  border-radius: 0px ;
+  margin-bottom: 0px ;
+}
+
+.jumbotron{
+  background: url('/assets/images/banner.png');
+  margin-bottom: 0px;
+  h1,p{
+    color: white;
+  }
+  input{
+    border-radius: 0px;
+  }
+  .loginRow{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.factoryContainer{
+  float: left;
+  position: relative;
+  width: 15%;
+  margin: 8px 12px;
+  padding: 1.2em 0.5em;
+  background: white;
+  h4{
+    margin-bottom: 0px;
+  }
+  &:hover{
+    background: yellow;
+  }
+}
