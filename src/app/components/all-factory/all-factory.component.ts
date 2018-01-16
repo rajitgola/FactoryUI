@@ -16,6 +16,10 @@ export class AllFactoryComponent implements OnInit {
     private router: Router
   ){}
 
+  sort(val){
+
+  }
+
   ngOnInit() {
     console.log('Here In ALlfactory');
     this.allFactoryService.getAllFactoryData().subscribe(
