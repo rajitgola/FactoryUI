@@ -1,5 +1,71 @@
-<p>
-  factory-landing works!
+<section>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><h2>Factory <span style="color:yellow;">Fabric</span></h2></a>
+      </div>
 
-</p>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="fa fa-bell fa-2x"><span class="badge">4</span></span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="https://avatars1.githubusercontent.com/u/16058039?s=40&v=4" alt="" class="img-circle"> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</section>
+
+<section>
+  <ol class="breadcrumb">
+  <li><a href="#">Factory Selection</a></li>
+  <li><a href="#">Factory Name</a></li>
+  <li class="active">Facory ThroughPut</li>
+</ol>
+</section>
+
+<section style="background:white;padding:1em 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+
+        <div class="col-lg-5 col- md-5">
+          <div class="factoryImg d-items d-row">
+            <img src="https://avatars1.githubusercontent.com/u/16058039?s=40&v=4" alt="">
+            <h2>Acme Factory</h2>
+          </div><!--factoryImg-->
+        </div><!--lg5-->
+
+        <div class="col-lg-7 col- md-7">
+          <div class="factoryDetail d-items">
+            <div class="d-items d-row"><i class="fa fa-2x fa-money"></i><span>Cost</span><span>$1000000</span></div>
+            <div class="d-items d-row"><i class="fa fa-2x fa-bar-chart"></i><span>No of app migrated lores</span><span>46%</span></div>
+            <div class="d-items d-row"><i class="fa fa-2x fa-users"></i><span>Employess</span><span>55</span></div>
+            <div class="d-items d-row"><i class="fa fa-2x fa-sticky-note "></i><span>Projects</span><span>5</span></div>
+          </div><!--factoryDetail-->
+        </div><!--lg7-->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <h1>{{currentFactory?.name}}</h1>

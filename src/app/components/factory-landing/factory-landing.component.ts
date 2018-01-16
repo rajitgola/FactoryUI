@@ -24,7 +24,7 @@ export class FactoryLandingComponent implements OnInit {
 
   ngOnInit() {
     console.log('Here In ALlfactory');
-    this.allFactoryService.getAllFactoryData().subscribe(
+    this.allFactoryService.getAllFactoryDetails().subscribe(
       res => {
         this.getCurrentFactory(res);
         // this.currentFactory = res.filter(res=> res.factoryId == this.factoryId),

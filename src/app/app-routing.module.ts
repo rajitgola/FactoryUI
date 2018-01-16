@@ -17,7 +17,7 @@ const routes: Routes = [
     component: FactoryLandingComponent , canActivate : [AuthGuard]
   },
   {
-    path: 'projectSummary',
+    path: 'projectSummary/:factoryId/:projectId',
     component: ProjectSummaryComponent , canActivate : [AuthGuard]
   },
   {

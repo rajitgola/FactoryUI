@@ -29,7 +29,7 @@ export class AppComponent {
     console.log(this._cookieService.get('token'));
     if(this._cookieService.get('token')){
       this.isLoggedIn = true;
-      this.router.navigate(['allFactory']);
+      // this.router.navigate(['allFactory']);
     }
   }
 

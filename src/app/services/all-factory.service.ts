@@ -21,4 +21,11 @@ export class AllFactoryService {
       .map(res => res.json());
   }
 
+  getAllFactoryDetails = (): Observable < Response > => {
+    return this
+      .http
+      .get('assets/data/allFactoryDetails.json')
+      .map(res => res.json());
+  }
+
 }

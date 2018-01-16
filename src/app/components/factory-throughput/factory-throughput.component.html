@@ -1,38 +1,98 @@
-<p>
-  factory-throughput works!
-</p>
+<section>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><h2>Factory <span style="color:yellow;">Fabric</span></h2></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="fa fa-bell fa-2x"><span class="badge">4</span></span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="https://avatars1.githubusercontent.com/u/16058039?s=40&v=4" alt="" class="img-circle"> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section>
+  <ol class="breadcrumb">
+  <li><a href="#">Factory Selection</a></li>
+  <li><a href="#">Factory Name</a></li>
+  <li class="active">Facory ThroughPut</li>
+</ol>
+</section>
 
 
-<section class="graphAnalytics">
 
-					<div class="panel panel-default ChartPanel">
-					<div class="panel-heading">
-						<h3 class="panel-title">Analytics</h3>
-					</div><!--heading-->
 
-					<div class="panel-body">
-						<div style="display: block" class="row graphContainer" >
-					  		 <div class="col-md-6" >
-							    <canvas baseChart
-							                [data]="lineChartData"
-							                [labels]="lineChartLabels"
-							                [options]="lineChartOptions"
-							                [chartType]="lineChartType"
-							                (chartHover)="chartHovered($event)"
-							                (chartClick)="chartClicked($event)"></canvas>
-							  </div>
-							  <div class="col-md-6">
-							    <canvas baseChart
-							                [data]="pieChartData"
-							                [labels]="pieChartLabels"
-							                [chartType]="pieChartType"
-							                (chartHover)="chartHovered($event)"
-							                (chartClick)="chartClicked($event)"></canvas>
-							  </div>
-							  <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
-							    <button (click)="randomizeType()" style="display: inline-block" class="btn btn-primary">More Details</button>
-							  </div>
-						</div><!--row-->
-					</div><!--panel body-->
-				</div><!--panel default-->
-			</section><!--graph analytics-->
+
+  <div class="container" style="padding:3em ; background:white">
+    <div class="row">
+      <div class="col-lg-7 col-md-7">
+          <div style="display: block" class="row graphContainer" >
+
+                <canvas baseChart
+                            [data]="lineChartData"
+                            [labels]="lineChartLabels"
+                            [options]="lineChartOptions"
+                            [chartType]="lineChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+              <!-- <div class="col-md-6">
+                <canvas baseChart
+                            [data]="pieChartData"
+                            [labels]="pieChartLabels"
+                            [chartType]="pieChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)"></canvas>
+              </div> -->
+              <div class="col-md-12 text-center" style="margin-top: 10px">
+                <button (click)="randomizeType()" style="display: inline-block" class="btn btn-primary">More Details</button>
+              </div>
+          </div><!--row-->
+      </div>
+      <div class="col-lg-5 col-md-5">
+        <div class="table-responsive">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th><strong>Month</strong></th>
+                            <th>Number of Applications Transformed & Migrated</th>
+                            <th>Average Cycle Time per Applications (Weeks)</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <!-- <tr *ngFor="let d of data"> -->
+                          <tr *ngFor="let d of data">
+                            <td><strong>{{d?.month}}</strong></td>
+                            <td>{{d?.val1}}</td>
+                            <td>{{d?.val2}} </td>
+                          </tr>
+                        </tbody>
+
+                      </table>
+          </div> <!--table res-->
+
+      </div>
+    </div>
+  </div>
